@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ccc"
+    >
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/title"
+        android:textColor="#ff00ff"
+        android:textSize="15sp"
+        tools:context=".SQliteOpenHelperDemo" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_id"
+        android:hint="@string/hint"
+        android:inputType="none"
+        android:maxLines="1"
+        android:textColor="#abcdef"
+        android:singleLine="true"
+        android:textColorHint="#efdc" />
+
+    <ListView
+        android:id="@+id/listView_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_id"
+        android:divider="@drawable/divider" >
+    </ListView>
+
+</RelativeLayout>
